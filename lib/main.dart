@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'MyHomePageState.dart';
+import 'package:flutter/services.dart'; // 导入Services库
 
 void main() {
   runApp(const MyApp());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.blue, // 设置状态栏颜色为蓝色
+    statusBarBrightness: Brightness.dark, // 设置状态栏文本颜色为白色
+  ));
 }
 
 class MyApp extends StatelessWidget {
